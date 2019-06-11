@@ -94,3 +94,8 @@ Enforce traffic routing only to canary based on HEADER values in requests.
 ```
 while true; do curl -H "myappspa-canary-v2: always" http://${INGRESS_IP}.xip.io/info.txt; done
 ```
+
+Delete canary deployment
+```
+kubectl delete -f myapp-deploy-canary --namespace myapp
+```
