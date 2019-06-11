@@ -1,5 +1,7 @@
 # Jump to lab directory
+```
 cd module02
+```
 
 # Change yaml files to your ACR name
 ```
@@ -178,6 +180,7 @@ In module03 we will install complete application including reverse proxy (Ingres
 In order to ease installation we will use Helm as deployment and packaging tool. Basically Helm allows to package multiple Kubernetes objects into single operation, provide versioning and lifecycle management. Before we move to module03 let's prepare Helm environment. You will use Helm heavily in module05 where you will get more details.
 
 Helm CLI component is preinstalled in Azure Cloud Shell so you can skip this step. If you are using your own computer first you would need to download Helm CLI.
+** If you are using shell.azure.com you don't need this **
 ```
 cd ./helm
 wget https://storage.googleapis.com/kubernetes-helm/helm-v2.9.1-linux-amd64.tar.gz
