@@ -1,7 +1,9 @@
 # Prepare deployment files
+```
 cd ../module04
 sed -i 's/YOURACRNAME/'$ACR_NAME'/g' *.yaml
 sed -i 's/YOURINGRESSIP/'$INGRESS_IP'/g' *.yaml
+```
 
 
 # Use Volume to map persistent static content shared across SPA Pods
@@ -9,8 +11,9 @@ Up to this point Microsoft logo in our frontend app has been packaged with conta
 
 Create Azure Files storage in Azure, create share and upload new image.
 ```
+source ../rc
+
 # Create storage account
-export STORAGE_NAME=tomaskubestorage198
 az storage account create -n $STORAGE_NAME \
     -g $RESOURCE_GROUP \
     --sku Standard_LRS

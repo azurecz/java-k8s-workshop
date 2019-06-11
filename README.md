@@ -27,12 +27,11 @@ We will use Azure container registry for our images, lets deploy ACR and push im
 
 Please use especially for ACR_NAME **your unique name** - it is unique in whole Azure environment.
 
+Pleace update file `rc` with your unique names for services.
+
 ```bash
 # variables
-export RESOURCE_GROUP=JTEST
-export LOCATION="northeurope"
-export ACR_NAME=valdaakssec001
-export AKS_CLUSTER_NAME=myaks
+source rc
 
 # create resource group
 az group create --location ${LOCATION} --name ${RESOURCE_GROUP}

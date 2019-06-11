@@ -3,9 +3,7 @@
 ## Create PostgreSQL service
 
 ```bash
-export POSTGRESQL_NAME="valdaakspostgresql001"
-export POSTGRESQL_USER="myadmin"
-export POSTGRESQL_PASSWORD="VerySecurePassword123..."
+source ../rc
 
 # create PostgreSQL server in Azure
 az postgres server create --resource-group ${RESOURCE_GROUP} \
