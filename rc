@@ -1,8 +1,8 @@
 # variables - please change for your unique names
 export RESOURCE_GROUP=JTEST
-export ACR_NAME=valdaakssec001
-export POSTGRESQL_NAME="valdaakspostgresql001"
-export STORAGE_NAME=tomaskubestorage198
+export ACR_NAME=tomasaks987
+export POSTGRESQL_NAME=tomaspsql987
+export STORAGE_NAME=tomaskubestorage987
 
 # variables
 export LOCATION="northeurope"
